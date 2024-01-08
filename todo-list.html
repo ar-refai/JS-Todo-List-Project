@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h1>TODO List</h1>
+        <input type="text" class="in-item in-name todo-item" name="todo-list-item" placeholder="Write a task">
+        <input type="date" class="in-item in-date todo-date" name="todo-list-date">
+        <button class="todo-submit" onclick="todoAction();">Submit</button>
+
+    </div>
+    <div >
+        <table>
+            <thead>
+                <tr>
+                    <td style="width: 40%;">Name</td>
+                    <td style="width: 30%;">Date</td>
+                    <td style="width: 30%;">Operation</td>
+                </tr>
+            </thead>
+            <tbody class="todo-body">
+                <tr>
+                    <td>do something</td>
+                    <td>22-10-2022</td>
+                    <td>
+                    <button>
+                        Delete
+                    </button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="todo-list.js"></script>
+</body>
+
+</html>
